@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Atm
 {
-    class Account
+    public class Account
     {
         private string accountHolder;
 

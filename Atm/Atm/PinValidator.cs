@@ -10,7 +10,14 @@ namespace Atm
     {
         public static bool CheckPin(string correctPin, string enteredPin)
         {
-            return false;
+            if (correctPin == enteredPin)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

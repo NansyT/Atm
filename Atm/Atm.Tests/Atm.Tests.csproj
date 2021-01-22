@@ -58,7 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AtmTests.cs" />
+    <Compile Include="MoneyMachineTests.cs" />
     <Compile Include="BankTests.cs" />
     <Compile Include="PinValidatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

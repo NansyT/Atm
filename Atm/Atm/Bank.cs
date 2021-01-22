@@ -12,26 +12,38 @@ namespace Atm
 
         public Bank()
         {
-            CreateAccounts();
+            accounts = CreateAccounts();
         }
-        private void UpdateBalance(double amount, string accountNr)
+        public double UpdateBalance(double amount, string name)
         {
-
-        }
-
-        public string GetAccount(string name)
-        {
-            return "";
+            double balance = GetAccount(name).Balance;
+            double newBal = balance - amount;
+            GetAccount(name).Balance = newBal;
+            return newBal;
         }
 
-        private void CreateAccounts()
+        public Account GetAccount(string name)
         {
+            foreach (var item in accounts)
+            {
+                if (item.AccountHolder == name)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        private List<Account> CreateAccounts()
+        {
+            List<Account> temp = new List<Account>();
             int numb =  100000;
             for (int i = 0; i < 5; i++)
             {
-                accounts.Add(new Account("Bob" + i.ToString(), numb.ToString(), "1234"));
+                temp.Add(new Account("Bob" + i.ToString(), numb.ToString(), "1234"));
                 numb += 10;
             }
+            return temp;
         }
     }
 }
