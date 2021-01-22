@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Atm
+namespace Atm.Tests
 {
-    class Program
+    class AtmTests
     {
-        static void Main(string[] args)
-        {
-            Console.ReadLine();
-        }
     }
 }

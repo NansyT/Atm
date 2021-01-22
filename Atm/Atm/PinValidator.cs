@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Atm
 {
-    class Program
+    public static class PinValidator
     {
-        static void Main(string[] args)
+        public static bool CheckPin(string correctPin, string enteredPin)
         {
-            Console.ReadLine();
+            return false;
         }
     }
 }
