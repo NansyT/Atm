@@ -11,6 +11,8 @@ namespace Atm.Tests
     public class MoneyMachineTests
     {
         //Ved ikke hvad der sker her
+        
+        //Hvad er det du ikke ved.... er det tagget Theory eller?
         [Theory]
         [InlineData(5000, "Bob0", 5000)]
         [InlineData(10000,"Bob2", 0)]
