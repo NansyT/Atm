@@ -10,6 +10,9 @@ namespace Atm
     {
         private string accountHolder;
 
+        //Hvorfor har du set metoder public? Det er katastrofalt at man kan ændre på både kontonummer, indehaver og pin kode.
+        //Hvad hvis kontonummeret er en primærnøgle?
+        
         public string AccountHolder
         {
             get { return accountHolder; }
